@@ -9,11 +9,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Components'),
-        elevation: 0,
       ),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
-          leading: Icon(AppRoutes.menuOptions[index].icon),
+          leading: Icon(
+            AppRoutes.menuOptions[index].icon,
+            color: Theme.of(context).primaryColor,
+          ),
           title: Text(AppRoutes.menuOptions[index].name),
           onTap: () {
             Navigator.pushNamed(context, AppRoutes.menuOptions[index].route);

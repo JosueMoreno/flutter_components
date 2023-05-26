@@ -15,8 +15,6 @@ class FirstListViewScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ListView Type 1'),
-        elevation: 0,
-        backgroundColor: Colors.indigo,
       ),
       body: ListView.separated(
         itemCount: games.length,
