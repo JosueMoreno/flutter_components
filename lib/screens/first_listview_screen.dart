@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FirstListViewScreen extends StatelessWidget {
-  const FirstListViewScreen({Key? key}) : super(key: key);
+  const FirstListViewScreen({super.key});
 
   static List<String> games = [
     "Megaman",
