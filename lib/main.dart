@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components/screens/first_listview_screen.dart';
+import 'package:flutter_components/router/app_routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,10 +8,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: FirstListViewScreen(),
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.getAppRoutes(),
+      onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),
     );
   }
 }
