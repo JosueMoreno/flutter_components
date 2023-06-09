@@ -23,5 +23,28 @@ class AppTheme {
         elevation: 3,
       ),
     ),
+    inputDecorationTheme: InputDecorationTheme(
+      floatingLabelStyle: TextStyle(color: primary),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: primary),
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(11),
+          topRight: Radius.circular(11),
+        ),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: primary),
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(11),
+          topRight: Radius.circular(11),
+        ),
+      ),
+      border: const OutlineInputBorder(
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(11),
+          topRight: Radius.circular(11),
+        ),
+      ),
+    ),
   );
 }
