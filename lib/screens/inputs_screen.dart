@@ -97,7 +97,7 @@ class InputsScreen extends StatelessWidget {
                     if (!myFormKey.currentState!.validate()) {
                       return;
                     } else {
-                      print(formValues);
+                      debugPrint(formValues.toString());
                     }
                   },
                   child: const SizedBox(
